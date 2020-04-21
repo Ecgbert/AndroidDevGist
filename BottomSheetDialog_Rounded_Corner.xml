@@ -1,0 +1,24 @@
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- global bottomSheetDialogTheme for every bottomSheetDialog -->
+        <item name="bottomSheetDialogTheme">@style/ModalBottomSheetDialog</item>
+    </style>
+    <!-- Overlay on BottomSheetDialog -->
+    <style name="ModalBottomSheetDialog" parent="ThemeOverlay.MaterialComponents.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/ModalBottomSheet</item>
+    </style>
+    <!-- this attribute decision BottomSheet actual style -->
+    <style name="ModalBottomSheet" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="backgroundTint">@color/green</item>
+        <item name="shapeAppearance">@style/AppShapeAppearance.LargeComponent</item>
+    </style>
+    
+    <!-- use material shape components for show corner -->
+    <style name="AppShapeAppearance.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">32dp</item>
+        <item name="cornerSizeTopRight">32dp</item>
+    </style>
