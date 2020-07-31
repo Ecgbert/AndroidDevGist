@@ -1,4 +1,3 @@
-package com.tpc.lib4test.ulti;
 
 import android.annotation.SuppressLint;
 import android.content.ContentUris;
